@@ -9,7 +9,7 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 	let r=''
-	for (key in obj){
+	for (let key in obj){
 		while(num>=obj[key]){
 			r=r+key
 			num=num-obj[key]
