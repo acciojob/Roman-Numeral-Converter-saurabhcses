@@ -12,10 +12,10 @@ function convertToRoman(num) {
   let r = '';
 
   for (let key in obj) {
-    const [symbol, value] = obj[key]; // Destructure symbol and value
-    while (num >= value) {
+ // Destructure symbol and value
+    while (num >= obj[i][0]) {
       r += symbol;
-      num -= value;
+      num -= obj[i][1];
     }
   }
 
