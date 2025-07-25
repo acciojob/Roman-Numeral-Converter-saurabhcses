@@ -12,7 +12,6 @@ function convertToRoman(num) {
   let r = '';
 
   for (let i=0;i< obj.length;i++) {
- // Destructure symbol and value
     while (num >= obj[i][0]) {
       r += symbol;
       num -= obj[i][1];
@@ -23,7 +22,7 @@ function convertToRoman(num) {
 }
 
 // Test
-//console.log(convertToRoman(36)); // Output: XXXVI
+console.log(convertToRoman(36)); // Output: XXXVI
 
 // Do not edit below this line
 module.exports = convertToRoman;
