@@ -11,7 +11,7 @@ function convertToRoman(num) {
 
   let r = '';
 
-  for (let key in obj) {
+  for (let i=0;i< obj.length;i++) {
  // Destructure symbol and value
     while (num >= obj[i][0]) {
       r += symbol;
