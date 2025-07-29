@@ -1,3 +1,4 @@
+convertToRoman(a)
 function convertToRoman(num) {
   const romanNumerals = [
     ['M', 1000],
@@ -24,6 +25,7 @@ function convertToRoman(num) {
       num -= value;
     }
   }
+console.log(result)
 
-  return result;
+
 }
