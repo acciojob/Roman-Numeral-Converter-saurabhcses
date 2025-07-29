@@ -1,5 +1,6 @@
-convertToRoman(a)
 function convertToRoman(num) {
+  if (num === 0) return ""; // No Roman numeral for 0
+
   const romanNumerals = [
     ['M', 1000],
     ['CM', 900],
@@ -16,7 +17,7 @@ function convertToRoman(num) {
     ['I', 1]
   ];
 
-  let result = '';
+  let result = "";
 
   for (let i = 0; i < romanNumerals.length; i++) {
     const [symbol, value] = romanNumerals[i];
@@ -25,7 +26,5 @@ function convertToRoman(num) {
       num -= value;
     }
   }
-console.log(result)
 
-
-}
+  return result;
